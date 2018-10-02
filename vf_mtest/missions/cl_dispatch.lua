@@ -210,4 +210,7 @@ function MissionDispatch.Kill()
 
     missionStage = 0
     SpawnedEnemies = false
+    
+    TriggerServerEvent('vf_base:AddCash', GetRandomIntInRange(50, 9000))
+    TriggerServerEvent('vf_base:AddBank', GetRandomIntInRange(50, 9000))
 end
