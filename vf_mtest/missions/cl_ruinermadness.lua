@@ -123,4 +123,6 @@ function MissionRuinerMadness.Kill()
 
     SetMaxWantedLevel(5)
     TriggerMusicEvent("MP_MC_STOP")
+    TriggerServerEvent('vf_base:AddCash', GetRandomIntInRange(50, 19000))
+    TriggerServerEvent('vf_base:AddBank', GetRandomIntInRange(50, 19000))
 end
